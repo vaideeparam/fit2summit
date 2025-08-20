@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fit2Summit — Launching Soon</title>
+  <meta name="description" content="Fit2Summit helps you prepare body and mind to conquer your true summit. Launching soon." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {font-family: 'Oxygen', sans-serif;}
+    html,body{height:100%; background:#ffffff;}
+    .fade-up{animation:fadeUp .8s ease-out .15s both}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body class="text-slate-800 antialiased">
+  <!-- Header -->
+  <header class="relative z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-xl bg-slate-100 grid place-items-center ring-1 ring-slate-200">
+          <span class="text-xs font-semibold tracking-wider text-slate-700">F2S</span>
+        </div>
+        <span class="text-lg font-semibold tracking-tight">Fit2Summit</span>
+      </div>
+      <div class="text-sm text-slate-500">Launching soon</div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="relative z-10">
+    <section class="relative mx-auto max-w-7xl px-6 pt-16 pb-28 lg:pt-24 lg:pb-32 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight fade-up">
+        Fit2Summit
+      </h1>
+      <blockquote class="mt-6 fade-up">
+        <p class="italic text-xl sm:text-2xl text-slate-600">“It’s not the mountain we conquer, but ourselves.”</p>
+      </blockquote>
+      <p class="mt-8 text-slate-600 max-w-2xl mx-auto leading-relaxed fade-up">
+        Discreet, high-touch preparation for ambitious goals. A journey shaped by discipline, resilience, and purpose.
+      </p>
+      <div class="mt-10 fade-up">
+        <span class="inline-flex items-center rounded-2xl px-6 py-3 text-sm font-medium ring-1 ring-slate-200 bg-slate-50 text-slate-700">
+          🚀 Launching Soon
+        </span>
+      </div>
+
+      <!-- Mountains Illustration -->
+      <div class="absolute inset-x-0 bottom-0 -mb-1">
+        <svg class="w-full" viewBox="0 0 1200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 140 L120 100 L240 130 L360 90 L480 120 L600 60 L720 100 L840 70 L960 110 L1080 80 L1200 120 L1200 200 L0 200 Z" fill="#e2e8f0"/>
+          <path d="M0 160 L150 130 L300 150 L450 110 L600 140 L750 100 L900 140 L1050 120 L1200 150 L1200 200 L0 200 Z" fill="#cbd5e1"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Vision -->
+    <section class="relative bg-slate-50">
+      <div class="relative mx-auto max-w-5xl px-6 py-16 text-center">
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Built for those who quietly aim higher — where fitness becomes the path to your true summit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Minimal CTA / Footer block -->
+    <section class="mx-auto max-w-7xl px-6 py-20">
+      <div class="rounded-3xl border border-slate-200 bg-slate-50 p-10 text-center">
+        <h2 class="text-3xl font-semibold">Fit2Summit.com</h2>
+        <p class="mt-3 text-slate-600">Launching Soon</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-sm">
+      <span>© <span id="year"></span> Fit2Summit</span>
+      <span class="opacity-70">Keep climbing.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
